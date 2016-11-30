@@ -39,6 +39,7 @@ var drawQRImage = function (transactionId, div) {
       mPosY: 0.5,
       image: $('#img-buffer')[0]
       });
+    $('#'+div).children().css('max-width','100%')
 };
 var drawSuccessTransaction = function (div) {
     div = div ? div : 'QRImage';
